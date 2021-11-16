@@ -1,0 +1,24 @@
+function accuracy = evaluateAccuracy(beta, X, y)
+%EVALUATEACCURACY calculates the prediction accuracy of the learned 
+%logistic regression model using the testing data 
+
+num = length(y); % number of testing examples
+
+% ====================== YOUR CODE HERE ======================
+% Instructions: Compute the percentage of accurately predicted examples 
+%
+%
+
+total = 0;
+predicted_value = predict(beta,X);
+for sample_i=1:num
+    if y(sample_i) == predicted_value(sample_i)
+        
+end
+accuracy = total/num;
+
+
+
+% ============================================================
+
+end
